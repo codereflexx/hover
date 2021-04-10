@@ -1,0 +1,41 @@
+/*Base*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Utilities*/
+
+/*Header & Nav*/
+
+/*Main content*/
+.hue-shift{
+    animation: hue-shift 5s infinite alternate;
+}
+
+/*Animations*/
+.img{
+    position: absolute;
+    align-items: center;
+    padding: 100px;
+    width: 70%;
+   animation: move-down 2s infinite alternate; 
+}
+
+/*Media Queries*/
+@keyframes move-down{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(2rem);
+    }
+}
+@keyframes hue-shift{
+    from{
+        filter: hue-rotate(0);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
